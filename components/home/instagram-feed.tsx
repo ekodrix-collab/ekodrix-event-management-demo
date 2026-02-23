@@ -35,12 +35,12 @@ export default function InstagramFeed() {
             <Reveal delay={0.1}>
               <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 mb-6">
                 <h2 className="text-2xl md:text-3xl font-light text-[#f5f0e8] tracking-tight">alwafaevents</h2>
-                <div className="flex gap-2">
+                <div className="flex flex-wrap items-center gap-2 group-buttons">
                   <a href="https://instagram.com/alwafaevents" target="_blank" rel="noopener noreferrer" 
-                    className="bg-[#d4af37] text-black px-6 py-1.5 rounded-md text-sm font-semibold hover:bg-[#f2d06b] transition-colors flex items-center gap-2">
+                    className="bg-[#d4af37] text-black px-4 sm:px-6 py-1.5 rounded-md text-[13px] font-semibold hover:bg-[#f2d06b] transition-colors flex items-center gap-2">
                     <UserPlus size={16} /> Follow
                   </a>
-                  <button className="bg-white/10 text-white px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-white/20 transition-colors">
+                  <button className="bg-white/10 text-white px-3 sm:px-4 py-1.5 rounded-md text-[13px] font-semibold hover:bg-white/20 transition-colors">
                     Message
                   </button>
                 </div>
@@ -48,18 +48,18 @@ export default function InstagramFeed() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <div className="flex justify-center md:justify-start gap-8 md:gap-12 mb-6">
-                <div className="text-center md:text-left">
-                  <span className="block text-lg font-bold text-white">524</span>
-                  <span className="text-xs uppercase tracking-widest text-[#e8dcc8]/40">Posts</span>
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-8 md:gap-12 mb-6">
+                <div className="text-center md:text-left min-w-[60px]">
+                  <span className="block text-base sm:text-lg font-bold text-white">524</span>
+                  <span className="text-[10px] uppercase tracking-widest text-[#e8dcc8]/40">Posts</span>
                 </div>
-                <div className="text-center md:text-left">
-                  <span className="block text-lg font-bold text-white">42.8k</span>
-                  <span className="text-xs uppercase tracking-widest text-[#e8dcc8]/40">Followers</span>
+                <div className="text-center md:text-left min-w-[60px]">
+                  <span className="block text-base sm:text-lg font-bold text-white">42.8k</span>
+                  <span className="text-[10px] uppercase tracking-widest text-[#e8dcc8]/40">Followers</span>
                 </div>
-                <div className="text-center md:text-left">
-                   <span className="block text-lg font-bold text-white">182</span>
-                   <span className="text-xs uppercase tracking-widest text-[#e8dcc8]/40">Following</span>
+                <div className="text-center md:text-left min-w-[60px]">
+                   <span className="block text-base sm:text-lg font-bold text-white">182</span>
+                   <span className="text-[10px] uppercase tracking-widest text-[#e8dcc8]/40">Following</span>
                 </div>
               </div>
             </Reveal>

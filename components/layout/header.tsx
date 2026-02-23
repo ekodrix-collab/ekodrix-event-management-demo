@@ -37,14 +37,14 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative z-10 group flex items-center gap-2 sm:gap-3">
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12">
+            <div className="relative w-9 h-9 sm:w-12 sm:h-12 flex-shrink-0">
               <Image src="/logo.svg" alt="AL WAFA" fill className="object-contain" sizes="48px" />
             </div>
-            <div className="flex flex-col">
-              <span style={{ fontFamily: 'var(--font-playfair), serif' }} className="text-lg sm:text-xl md:text-2xl text-white tracking-wide leading-none">
+            <div className="flex flex-col min-w-0">
+              <span style={{ fontFamily: 'var(--font-playfair), serif' }} className="text-base sm:text-xl md:text-2xl text-white tracking-wide leading-none truncate">
                 AL WAFA
               </span>
-              <span className="text-[7px] sm:text-[8px] tracking-[0.25em] uppercase text-[#d4af37] leading-none mt-0.5">
+              <span className="text-[6px] sm:text-[8px] tracking-[0.25em] uppercase text-[#d4af37] leading-none mt-1">
                 Event Management
               </span>
             </div>
@@ -77,8 +77,8 @@ export function Header() {
             <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-[#d4af37] text-[#0a0805] text-[10px] font-bold tracking-[0.2em] uppercase py-3 px-6 hover:bg-[#f2d06b] hover:shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all duration-500">
               Enquire Now
             </Link>
-            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden text-[#f5f0e8] p-2 relative z-50 hover:text-[#d4af37] transition-colors" aria-label="Menu">
-              {isMobileMenuOpen ? <X size={26} strokeWidth={1.5} /> : <Menu size={26} strokeWidth={1.5} />}
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden text-[#f5f0e8] p-1.5 -mr-1.5 relative z-50 hover:text-[#d4af37] transition-colors" aria-label="Menu">
+              {isMobileMenuOpen ? <X size={30} strokeWidth={1.2} /> : <Menu size={30} strokeWidth={1.2} />}
             </button>
           </div>
         </div>
