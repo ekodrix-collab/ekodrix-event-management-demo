@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { Instagram } from 'lucide-react'
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/shared/reveal-animation'
 
 const instagramPosts = [
@@ -33,10 +34,12 @@ export default function InstagramFeed() {
               <a href="https://instagram.com/alwafaevents" target="_blank" rel="noopener noreferrer"
                 className="group block relative aspect-square overflow-hidden rounded-lg">
                 <Image src={post.src} alt={post.alt} fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[2px]"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw" />
-                <div className="absolute inset-0 bg-[#1f1a14]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-[#f5f0e8] text-2xl">♡</span>
+                <div className="absolute inset-0 bg-[#0a0805]/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                  <div className="bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <Instagram size={20} className="text-white" />
+                  </div>
                 </div>
               </a>
             </StaggerItem>
