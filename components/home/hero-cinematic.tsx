@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function HeroCinematic() {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-[#1f1a14]">
+    <section className="relative h-[100dvh] w-full overflow-hidden bg-[#1f1a14]">
       {/* Background */}
       <motion.div className="absolute inset-0"
         animate={{ scale: [1, 1.06] }}
@@ -19,7 +19,7 @@ export default function HeroCinematic() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(10,8,5,0.6)_100%)]" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-5 md:px-8 mt-12 md:mt-16">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-5 md:px-8 pt-16 md:pt-20">
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 1 }}
           className="flex items-center gap-4 mb-6 md:mb-8 opacity-80">
           <div className="w-12 md:w-16 h-[1px] bg-gradient-to-r from-transparent to-[#d4af37]" />
@@ -34,9 +34,9 @@ export default function HeroCinematic() {
 
         <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 1 }}
           style={{ fontFamily: 'var(--font-playfair), serif' }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-normal text-white max-w-5xl leading-[1.1] drop-shadow-2xl">
+          className="text-[2.6rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-normal text-white max-w-5xl leading-[1.1] drop-shadow-2xl">
           Crafting Unforgettable
-          <span className="block italic text-[#e8dcc8] font-light mt-2">Experiences</span>
+          <span className="block italic text-[#e8dcc8] font-light mt-1 md:mt-2">Experiences</span>
         </motion.h1>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.8 }}
@@ -57,10 +57,10 @@ export default function HeroCinematic() {
 
         {/* Scroll hint */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, duration: 1 }}
-          className="absolute bottom-8 md:bottom-10 hidden sm:block">
+          className="absolute bottom-6 md:bottom-10 flex justify-center">
           <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-5 h-8 border border-[#e8dcc8]/30 rounded-full flex items-start justify-center p-1">
-            <div className="w-1 h-2 bg-[#d4af37] rounded-full" />
+            className="w-5 h-8 border border-[#e8dcc8]/20 rounded-full flex items-start justify-center p-1">
+            <div className="w-1 h-2 bg-[#d4af37]/60 rounded-full" />
           </motion.div>
         </motion.div>
       </div>

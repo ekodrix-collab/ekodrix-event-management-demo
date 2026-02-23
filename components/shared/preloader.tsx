@@ -41,9 +41,9 @@ export function Preloader() {
           initial={{ y: 0 }}
           exit={{ y: '-100%' }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-0 z-[100] bg-[#050403] flex items-center justify-center"
+          className="fixed inset-0 z-[100] bg-[#050403] flex items-center justify-center h-[100dvh] w-screen"
         >
-          <div className="text-center flex flex-col items-center">
+          <div className="text-center flex flex-col items-center justify-center p-6">
             <motion.div
               initial={{ opacity: 0, scale: 0.9, filter: 'blur(10px)' }}
               animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
