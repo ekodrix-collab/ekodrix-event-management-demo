@@ -2,7 +2,7 @@ export const BRAND = {
     name: 'AL WAFA',
     fullName: 'AL WAFA Event Management',
     tagline: 'Crafting Unforgettable Experiences',
-    founder: 'Muhamed Siyad',
+    founder: 'Siyad Aslam',
     founderTitle: 'Founder & Creative Director',
     phone: '+91 98765 43210',
     email: 'hello@alwafaevents.com',

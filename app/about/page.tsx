@@ -5,7 +5,7 @@ import { BRAND } from '@/lib/constants'
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/shared/reveal-animation'
 
 const timeline = [
-  { year: '2008', title: 'The Beginning', description: 'Muhamed Siyad started catering for family events and intimate gatherings across Kochi.' },
+  { year: '2008', title: 'The Beginning', description: 'Siyad Aslam started catering for family events and intimate gatherings across Kochi.' },
   { year: '2012', title: 'First Celebrity Wedding', description: 'Our breakthrough — curating a high-profile destination wedding that put us on the map.' },
   { year: '2015', title: 'Full Event Management', description: 'Launched comprehensive event management services, from concept to execution.' },
   { year: '2018', title: '200+ Events Milestone', description: 'Crossed 200 luxury events with a growing reputation as Kerala\'s finest.' },
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
             <Reveal direction="left">
               <div className="relative h-[300px] sm:h-[400px] md:h-[550px] overflow-hidden rounded-xl md:rounded-2xl">
-                <Image src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80" alt="Muhamed Siyad, Founder" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+                <Image src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80" alt="Siyad Aslam, Founder" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
             </Reveal>
             <div>

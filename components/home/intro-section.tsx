@@ -31,7 +31,7 @@ export default function IntroSection() {
         </Reveal>
         <Reveal delay={0.4}>
           <p className="text-sm md:text-base text-[#4a4a4a] leading-relaxed">
-            Led by <strong className="text-[#1a1a1a]">Muhamed Siyad</strong>, our team of 50+ specialists crafts experiences
+            Led by <strong className="text-[#1a1a1a]">Siyad Aslam</strong>, our team of 50+ specialists crafts experiences
             that become lifelong memories — events that your guests will talk about for years.
           </p>
         </Reveal>

@@ -3,9 +3,9 @@ import { TeamMember } from '@/types'
 export const teamMembers: TeamMember[] = [
     {
         id: '1',
-        name: 'Muhamed Siyad',
+        name: 'Siyad Aslam',
         role: 'Founder & Creative Director',
-        bio: 'With over 15 years of experience in luxury event management, Muhamed Siyad founded AL WAFA with a vision to bring world-class celebration experiences to Kerala. His eye for detail and passion for perfection drives every event we create.',
+        bio: 'With over 15 years of experience in luxury event management, Siyad Aslam founded AL WAFA with a vision to bring world-class celebration experiences to Kerala. His eye for detail and passion for perfection drives every event we create.',
         experience: '15+ years',
         image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80',
     },
