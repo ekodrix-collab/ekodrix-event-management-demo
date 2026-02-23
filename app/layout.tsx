@@ -28,6 +28,13 @@ const cormorant = Cormorant_Garamond({
   style: ["normal", "italic"],
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: 'cover',
+}
+
 export const metadata: Metadata = {
   title: "AL WAFA Event Management | Luxury Events & Premium Catering in Kerala",
   description:
@@ -57,10 +64,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${outfit.variable} ${cormorant.variable}`}>
-      <body className="font-body bg-cream text-charcoal antialiased overflow-x-hidden">
+      <body className="font-body bg-cream text-charcoal antialiased overflow-x-hidden min-h-screen">
         <Preloader />
         <Header />
-        <main>{children}</main>
+        <main className="relative overflow-x-hidden">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

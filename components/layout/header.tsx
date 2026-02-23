@@ -77,7 +77,7 @@ export function Header() {
             <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-[#d4af37] text-[#0a0805] text-[10px] font-bold tracking-[0.2em] uppercase py-3 px-6 hover:bg-[#f2d06b] hover:shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all duration-500">
               Enquire Now
             </Link>
-            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden text-[#f5f0e8] p-1.5 -mr-1.5 relative z-50 hover:text-[#d4af37] transition-colors" aria-label="Menu">
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden text-[#f5f0e8] p-2 relative z-50 hover:text-[#d4af37] transition-colors" aria-label="Menu">
               {isMobileMenuOpen ? <X size={30} strokeWidth={1.2} /> : <Menu size={30} strokeWidth={1.2} />}
             </button>
           </div>

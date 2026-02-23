@@ -24,7 +24,11 @@ export function Preloader() {
 
     const removeTimer = setTimeout(() => {
       setIsVisible(false)
+      document.body.style.overflow = ''
     }, 3500)
+
+    // Lock scroll during preloader
+    document.body.style.overflow = 'hidden'
 
     return () => {
       clearTimeout(timer)
@@ -41,7 +45,7 @@ export function Preloader() {
           initial={{ y: 0 }}
           exit={{ y: '-100%' }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-0 z-[100] bg-[#050403] flex items-center justify-center h-[100dvh] w-screen"
+          className="fixed inset-0 z-[100] bg-[#050403] flex items-center justify-center h-[100dvh] w-full"
         >
           <div className="text-center flex flex-col items-center justify-center p-6">
             <motion.div
