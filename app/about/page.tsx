@@ -23,7 +23,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50dvh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <Image src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1920&q=80" alt="Elegant luxury chandelier venue" fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-[#0a0805]/75" />
         <div className="relative z-10 text-center px-5">
